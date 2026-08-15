@@ -7,592 +7,429 @@
 <title>JWR RenewTech | Solar • EV • Smart Energy</title>
 
 <meta name="description"
-content="JWR RenewTech - Rooftop Solar, EV Charging and Smart Energy Solutions.">
+content="JWR RenewTech provides rooftop solar, hybrid solar, EV charging and smart energy solutions for homes and businesses.">
 
 <style>
-
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+  scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    color:#102019;
-    background:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#10251d;
+  background:#fff;
+  line-height:1.6;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+.container{
+  width:92%;
+  max-width:1150px;
+  margin:auto;
 }
-
-/* TOP BAR */
 
 .topbar{
-    background:#102019;
-    color:#fff;
-    padding:8px 5%;
-    font-size:12px;
-    display:flex;
-    justify-content:space-between;
+  background:#061a12;
+  color:#d9eee5;
+  padding:8px 0;
+  font-size:13px;
 }
 
-/* NAVBAR */
+nav{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#fff;
+  border-bottom:1px solid #e5eee9;
+}
 
 .navbar{
-    position:sticky;
-    top:0;
-    z-index:100;
-    background:white;
-    border-bottom:1px solid #e5ebe7;
-    box-shadow:0 3px 20px rgba(0,0,0,.06);
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
 }
 
-.nav-inner{
-    max-width:1250px;
-    margin:auto;
-    padding:10px 5%;
-    display:flex;
-    align-items:center;
-    gap:25px;
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:22px;
+  font-weight:900;
+  color:#087f4e;
 }
 
 .logo img{
-    width:190px;
-    height:65px;
-    object-fit:contain;
-    display:block;
+  width:55px;
+  height:55px;
+  object-fit:contain;
 }
 
 .menu{
-    display:flex;
-    gap:25px;
-    align-items:center;
-    justify-content:center;
-    flex:1;
-    font-size:14px;
-    font-weight:bold;
+  display:flex;
+  align-items:center;
+  gap:22px;
 }
 
-.menu a:hover{
-    color:#087b45;
+.menu a{
+  text-decoration:none;
+  color:#15372a;
+  font-size:14px;
+  font-weight:700;
 }
 
-.quote-btn{
-    background:#d71920;
-    color:white;
-    padding:13px 18px;
-    border-radius:8px;
-    font-weight:bold;
+.btn{
+  display:inline-block;
+  background:#087f4e;
+  color:white;
+  text-decoration:none;
+  padding:13px 20px;
+  border-radius:9px;
+  font-weight:800;
+  border:0;
+  cursor:pointer;
 }
 
-.mobile-menu{
-    display:none;
-    font-size:25px;
-    border:0;
-    background:white;
+.btn:hover{
+  background:#056b41;
 }
 
 /* HERO */
 
 .hero{
-    min-height:650px;
-    position:relative;
-    overflow:hidden;
-    color:white;
-    background:#071a12;
+  background:linear-gradient(120deg,#effaf4,#ffffff);
+  padding:70px 0;
 }
 
-.hero-bg{
-    position:absolute;
-    inset:0;
-
-    background:
-    linear-gradient(
-        90deg,
-        rgba(3,18,12,.95),
-        rgba(3,18,12,.65),
-        rgba(3,18,12,.15)
-    ),
-    url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2000&q=85");
-
-    background-size:cover;
-    background-position:center;
-}
-
-.hero-inner{
-    position:relative;
-    z-index:2;
-    max-width:1250px;
-    margin:auto;
-
-    padding:90px 5%;
-
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:40px;
-    align-items:center;
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
 }
 
 .badge{
-    display:inline-block;
-    background:#dff5e8;
-    color:#087b45;
-    padding:10px 15px;
-    border-radius:30px;
-    font-size:13px;
-    font-weight:bold;
+  display:inline-block;
+  background:#ddf5e8;
+  color:#087f4e;
+  padding:8px 15px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:800;
 }
 
-.hero h1{
-    font-size:clamp(45px,6vw,75px);
-    line-height:.98;
-    margin:20px 0;
+h1{
+  font-size:clamp(45px,6vw,72px);
+  line-height:.98;
+  letter-spacing:-3px;
+  margin:20px 0;
 }
 
-.hero h1 span{
-    color:#ffc13a;
+h1 span{
+  color:#087f4e;
 }
 
-.hero p{
-    font-size:18px;
-    line-height:1.6;
-    color:#e0e8e3;
-    max-width:650px;
+.hero-text{
+  color:#64756d;
+  font-size:18px;
+  max-width:620px;
 }
 
 .buttons{
-    margin-top:25px;
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
+  display:flex;
+  gap:12px;
+  margin-top:28px;
+  flex-wrap:wrap;
 }
 
-.primary-btn{
-    background:#d71920;
-    color:white;
-    padding:14px 22px;
-    border-radius:8px;
-    font-weight:bold;
+.btn-outline{
+  display:inline-block;
+  padding:12px 19px;
+  border:1px solid #087f4e;
+  color:#087f4e;
+  border-radius:9px;
+  text-decoration:none;
+  font-weight:800;
 }
 
-.secondary-btn{
-    border:1px solid #ffffff80;
-    color:white;
-    padding:13px 22px;
-    border-radius:8px;
-    font-weight:bold;
+.hero-image{
+  height:430px;
+  border-radius:25px;
+  overflow:hidden;
+  box-shadow:0 20px 50px rgba(0,0,0,.12);
 }
+
+.hero-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* STATS */
 
 .stats{
-    background:white;
-    color:#102019;
-    border-radius:20px;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    overflow:hidden;
-    box-shadow:0 25px 70px rgba(0,0,0,.4);
+  margin-top:-30px;
+  position:relative;
+  z-index:5;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
 }
 
 .stat{
-    padding:30px;
-    border:1px solid #e5ebe7;
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  border:1px solid #e2ece7;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
 .stat strong{
-    display:block;
-    font-size:30px;
-    color:#087b45;
+  display:block;
+  font-size:27px;
+  color:#087f4e;
 }
 
-.stat small{
-    color:#66746d;
+/* SECTIONS */
+
+section{
+  padding:80px 0;
 }
 
-/* SECTION */
-
-.section{
-    padding:75px 5%;
+.green-section{
+  background:#f3faf6;
 }
 
-.container{
-    max-width:1250px;
-    margin:auto;
+.eyebrow{
+  color:#087f4e;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
 }
 
-.heading{
-    text-align:center;
-    max-width:750px;
-    margin:0 auto 40px;
+h2{
+  font-size:42px;
+  line-height:1.1;
+  margin:8px 0 12px;
 }
 
-.heading small{
-    color:#d71920;
-    font-weight:bold;
+.section-text{
+  color:#64756d;
+  font-size:17px;
 }
 
-.heading h2{
-    font-size:38px;
-    margin:10px 0;
-}
+/* CARDS */
 
-.heading p{
-    color:#68756f;
-    line-height:1.6;
-}
-
-/* SERVICES */
-
-.services{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:35px;
 }
 
 .card{
-    border:1px solid #e1eae5;
-    border-radius:17px;
-    overflow:hidden;
-    background:white;
-    box-shadow:0 8px 30px rgba(0,0,0,.06);
-    transition:.2s;
+  background:#fff;
+  border:1px solid #e3ebe7;
+  border-radius:17px;
+  overflow:hidden;
+  transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
+  transform:translateY(-5px);
+  box-shadow:0 15px 35px rgba(0,0,0,.10);
 }
 
-.card-image{
-    height:170px;
-    background-size:cover;
-    background-position:center;
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
 }
 
-.card-body{
-    padding:22px;
+.card-content{
+  padding:20px;
 }
 
 .card h3{
-    margin-bottom:10px;
+  margin-bottom:7px;
 }
 
 .card p{
-    color:#68756f;
-    line-height:1.5;
-    font-size:14px;
+  color:#64756d;
+  font-size:14px;
 }
 
-.more{
-    display:inline-block;
-    margin-top:15px;
-    color:#d71920;
-    font-weight:bold;
+/* PROJECTS */
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+  margin-top:35px;
 }
 
-/* SUBSIDY */
-
-.green-section{
-    background:#f3faf6;
+.gallery img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:16px;
+  transition:.3s;
 }
 
-.two-column{
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:25px;
-}
-
-.subsidy{
-    background:linear-gradient(135deg,#087b45,#034c2b);
-    color:white;
-    padding:35px;
-    border-radius:20px;
-}
-
-.subsidy h2{
-    font-size:35px;
-    margin:12px 0;
-}
-
-.subsidy p{
-    color:#d8e9df;
-    line-height:1.6;
-}
-
-.subsidy-table{
-    margin-top:25px;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-}
-
-.subsidy-table div{
-    padding:13px;
-    border-bottom:1px solid rgba(255,255,255,.2);
+.gallery img:hover{
+  transform:scale(1.02);
 }
 
 /* CALCULATOR */
 
 .calculator{
-    background:#102019;
-    color:white;
-    padding:30px;
-    border-radius:20px;
+  background:#061a12;
+  color:#fff;
+  border-radius:25px;
+  padding:45px;
 }
 
 .calculator p{
-    color:#c9d5ce;
-    margin:12px 0 20px;
+  color:#bfd1c9;
+}
+
+.form{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-top:25px;
 }
 
 input,
 select,
 textarea{
-    width:100%;
-    padding:14px;
-    border:1px solid #d6e1db;
-    border-radius:8px;
-    margin-bottom:13px;
-    font-size:14px;
+  width:100%;
+  padding:14px;
+  border:1px solid #cbdad3;
+  border-radius:9px;
+  font-size:15px;
 }
 
 textarea{
-    height:100px;
-}
-
-.calculate{
-    width:100%;
-    padding:14px;
-    border:0;
-    border-radius:8px;
-    background:#f59b16;
-    color:white;
-    font-weight:bold;
+  grid-column:1/-1;
+  min-height:120px;
 }
 
 .result{
-    margin-top:15px;
-    font-weight:bold;
-}
-
-/* PROJECTS */
-
-.projects{
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr;
-    gap:15px;
-}
-
-.project{
-    min-height:280px;
-    border-radius:18px;
-    background-size:cover;
-    background-position:center;
-    position:relative;
-    overflow:hidden;
-    display:flex;
-    align-items:end;
-    padding:20px;
-    color:white;
-}
-
-.project:after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(transparent,rgba(0,0,0,.8));
-}
-
-.project div{
-    position:relative;
-    z-index:2;
+  margin-top:15px;
+  font-size:18px;
+  font-weight:bold;
+  color:#7de1b0;
 }
 
 /* CONTACT */
 
-.contact{
-    background:#102019;
-    color:white;
-}
-
-.contact .heading p{
-    color:#c9d5ce;
-}
-
-.form{
-    max-width:700px;
-    margin:auto;
-    background:white;
-    padding:30px;
-    border-radius:20px;
-}
-
-.submit{
-    width:100%;
-    border:0;
-    padding:14px;
-    background:#087b45;
-    color:white;
-    border-radius:8px;
-    font-weight:bold;
+.contact-box{
+  max-width:800px;
+  margin:auto;
 }
 
 /* FOOTER */
 
-.footer{
-    background:#08100c;
-    color:#d8e3dd;
-    text-align:center;
-    padding:40px 5%;
+footer{
+  background:#03100b;
+  color:#c9d9d2;
+  padding:50px 0 25px;
 }
 
-.footer img{
-    width:190px;
-    background:white;
-    border-radius:8px;
-    padding:5px;
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:35px;
 }
 
-.footer p{
-    margin:12px;
-    color:#91a098;
+footer h3{
+  color:white;
+  margin-bottom:12px;
 }
 
-/* WHATSAPP */
+footer a{
+  color:#c9d9d2;
+  text-decoration:none;
+}
 
-.whatsapp{
-    position:fixed;
-    right:18px;
-    bottom:18px;
-    width:58px;
-    height:58px;
-    border-radius:50%;
-    background:#19a85b;
-    color:white;
-    display:grid;
-    place-items:center;
-    font-size:25px;
-    z-index:999;
+.copyright{
+  border-top:1px solid #234238;
+  margin-top:30px;
+  padding-top:18px;
+  font-size:13px;
 }
 
 /* MOBILE */
 
-@media(max-width:900px){
+@media(max-width:800px){
 
-    .topbar{
-        display:none;
-    }
+  .menu{
+    display:none;
+  }
 
-    .nav-inner{
-        padding:7px 15px;
-    }
+  .hero{
+    padding:45px 0;
+  }
 
-    .logo img{
-        width:175px;
-        height:60px;
-    }
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
 
-    .menu,
-    .quote-btn{
-        display:none;
-    }
+  .hero-image{
+    height:300px;
+  }
 
-    .mobile-menu{
-        display:block;
-        margin-left:auto;
-    }
+  .stats-grid{
+    grid-template-columns:1fr 1fr;
+  }
 
-    .hero{
-        min-height:auto;
-    }
+  .cards{
+    grid-template-columns:1fr;
+  }
 
-    .hero-inner{
-        grid-template-columns:1fr;
-        padding:60px 20px 35px;
-    }
+  .gallery{
+    grid-template-columns:1fr;
+  }
 
-    .hero h1{
-        font-size:50px;
-    }
+  .gallery img{
+    height:250px;
+  }
 
-    .hero p{
-        font-size:16px;
-    }
+  .form{
+    grid-template-columns:1fr;
+  }
 
-    .stats{
-        margin-top:25px;
-    }
+  textarea{
+    grid-column:auto;
+  }
 
-    .stat{
-        padding:20px;
-    }
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
 
-    .stat strong{
-        font-size:23px;
-    }
+  h1{
+    font-size:48px;
+  }
 
-    .section{
-        padding:55px 16px;
-    }
+  h2{
+    font-size:34px;
+  }
 
-    .heading h2{
-        font-size:30px;
-    }
-
-    .services{
-        grid-template-columns:1fr;
-    }
-
-    .card-image{
-        height:190px;
-    }
-
-    .two-column{
-        grid-template-columns:1fr;
-    }
-
-    .subsidy h2{
-        font-size:29px;
-    }
-
-    .projects{
-        grid-template-columns:1fr;
-    }
-
-    .project{
-        min-height:220px;
-    }
-
+  .calculator{
+    padding:28px 20px;
+  }
 }
-
-/* SMALL MOBILE */
-
-@media(max-width:500px){
-
-    .logo img{
-        width:155px;
-    }
-
-    .hero h1{
-        font-size:45px;
-    }
-
-    .buttons{
-        flex-direction:column;
-    }
-
-    .primary-btn,
-    .secondary-btn{
-        width:100%;
-        text-align:center;
-    }
-
-}
-
 </style>
 </head>
 
@@ -601,42 +438,38 @@ textarea{
 <!-- TOP BAR -->
 
 <div class="topbar">
-<span>☀ Clean Energy • Smart Savings</span>
-<span>📍 Maharashtra | 📞 +91 99600 12345</span>
+  <div class="container">
+    JWR RenewTech • Solar • EV • Smart Energy
+  </div>
 </div>
-
 
 <!-- NAVBAR -->
 
-<nav class="navbar">
+<nav>
+  <div class="container navbar">
 
-<div class="nav-inner">
+    <a href="#" class="logo">
 
-<a class="logo" href="#">
-<img src="jwr-renewtech-logo.png" alt="JWR RenewTech">
-</a>
+      <!-- LOGO -->
+      <img src="jwr-renewtech-logo.png"
+           alt="JWR RenewTech Logo">
 
-<div class="menu">
+      <span>JWR RenewTech</span>
 
-<a href="#solutions">Solutions</a>
-<a href="#subsidy">PM Surya Ghar</a>
-<a href="#projects">Projects</a>
-<a href="#calculator">Calculator</a>
-<a href="#contact">Contact</a>
+    </a>
 
-</div>
+    <div class="menu">
+      <a href="#solutions">Solutions</a>
+      <a href="#projects">Projects</a>
+      <a href="#calculator">Calculator</a>
+      <a href="#contact">Contact</a>
 
-<a class="quote-btn" href="#contact">
-Get Free Quote
-</a>
+      <a href="#contact" class="btn">
+        Get Free Quote
+      </a>
+    </div>
 
-<button class="mobile-menu"
-onclick="alert('Menu: Solutions | PM Surya Ghar | Projects | Calculator | Contact')">
-☰
-</button>
-
-</div>
-
+  </div>
 </nav>
 
 
@@ -644,328 +477,221 @@ onclick="alert('Menu: Solutions | PM Surya Ghar | Projects | Calculator | Contac
 
 <section class="hero">
 
-<div class="hero-bg"></div>
+  <div class="container hero-grid">
 
-<div class="hero-inner">
+    <div>
 
-<div>
+      <span class="badge">
+        ✦ Premium Rooftop Solar Solutions
+      </span>
 
-<span class="badge">
-✦ Premium Rooftop Solar Solutions
-</span>
+      <h1>
+        Powering Homes.<br>
+        <span>Lighting Futures.</span>
+      </h1>
 
-<h1>
-Powering Homes.
-<br>
-<span>Lighting Futures.</span>
-</h1>
+      <p class="hero-text">
+        Smart rooftop solar solutions for homes and businesses —
+        from site survey and design to installation,
+        net metering and subsidy assistance.
+      </p>
 
-<p>
-High-efficiency solar solutions for homes,
-businesses and industries. Reduce electricity
-bills and build a smarter, cleaner future.
-</p>
+      <div class="buttons">
 
-<div class="buttons">
+        <a href="#calculator" class="btn">
+          Calculate My Savings →
+        </a>
 
-<a class="primary-btn" href="#contact">
-Get Free Site Survey →
-</a>
+        <a href="#contact" class="btn-outline">
+          Book Free Site Survey
+        </a>
 
-<a class="secondary-btn" href="tel:+919960012345">
-☎ Call Us Now
-</a>
+      </div>
 
-</div>
+    </div>
 
-</div>
 
+    <div class="hero-image">
+
+      <img
+        src="project-1.png"
+        alt="JWR Solar Rooftop Installation">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- STATS -->
 
 <div class="stats">
 
-<div class="stat">
-<strong>15+ MW</strong>
-<small>Total Installations</small>
+  <div class="container stats-grid">
+
+    <div class="stat">
+      <strong>15+ MW</strong>
+      Total Solar Installation
+    </div>
+
+    <div class="stat">
+      <strong>800+</strong>
+      Rooftop Projects
+    </div>
+
+    <div class="stat">
+      <strong>25 Years</strong>
+      Panel Warranty*
+    </div>
+
+    <div class="stat">
+      <strong>5 Years</strong>
+      Service Support*
+    </div>
+
+  </div>
+
 </div>
 
-<div class="stat">
-<strong>800+</strong>
-<small>Happy Customers</small>
-</div>
 
-<div class="stat">
-<strong>8+ Years</strong>
-<small>Experience</small>
-</div>
+<!-- SOLUTIONS -->
 
-<div class="stat">
-<strong>25 Years</strong>
-<small>Panel Warranty</small>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- SERVICES -->
-
-<section class="section" id="solutions">
+<section id="solutions">
 
 <div class="container">
 
-<div class="heading">
+  <div class="eyebrow">
+    Complete Solar Solutions
+  </div>
 
-<small>OUR SOLAR SOLUTIONS</small>
+  <h2>
+    Solutions for Every Energy Need
+  </h2>
 
-<h2>
-Complete Solar Solutions
-</h2>
+  <p class="section-text">
+    Reliable clean-energy solutions designed around
+    your property and electricity usage.
+  </p>
 
-<p>
-From residential rooftops to commercial energy systems,
-we design the right solution for your requirement.
-</p>
 
-</div>
+  <div class="cards">
 
 
-<div class="services">
+    <div class="card">
 
+      <img src="project-1.png"
+           alt="On Grid Solar">
 
-<div class="card">
+      <div class="card-content">
 
-<div class="card-image"
-style="background-image:url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80')">
-</div>
+        <h3>On Grid Solar System</h3>
 
-<div class="card-body">
+        <p>
+          Reduce electricity bills with
+          grid-connected rooftop solar.
+        </p>
 
-<h3>On Grid Solar System</h3>
+      </div>
 
-<p>
-Reduce your electricity bill with
-smart grid-connected solar.
-</p>
+    </div>
 
-<a class="more" href="#contact">
-Know More →
-</a>
 
-</div>
+    <div class="card">
 
-</div>
+      <img src="project-2.png"
+           alt="Off Grid Solar">
 
+      <div class="card-content">
 
-<div class="card">
+        <h3>Off Grid Solar System</h3>
 
-<div class="card-image"
-style="background-image:url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80')">
-</div>
+        <p>
+          Solar power with battery backup
+          for energy independence.
+        </p>
 
-<div class="card-body">
+      </div>
 
-<h3>Off Grid Solar System</h3>
+    </div>
 
-<p>
-Reliable solar power where grid
-availability is limited.
-</p>
 
-<a class="more" href="#contact">
-Know More →
-</a>
+    <div class="card">
 
-</div>
+      <img src="project-3.png"
+           alt="Hybrid Solar">
 
-</div>
+      <div class="card-content">
 
+        <h3>Hybrid Solar System</h3>
 
-<div class="card">
+        <p>
+          Combine solar, grid power and
+          battery backup intelligently.
+        </p>
 
-<div class="card-image"
-style="background-image:url('https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=800&q=80')">
-</div>
+      </div>
 
-<div class="card-body">
+    </div>
 
-<h3>Hybrid Solar System</h3>
 
-<p>
-Solar plus battery backup for
-greater energy independence.
-</p>
+    <div class="card">
 
-<a class="more" href="#contact">
-Know More →
-</a>
+      <img src="project-4.png"
+           alt="Solar Products">
 
-</div>
+      <div class="card-content">
 
-</div>
+        <h3>Solar Products</h3>
 
+        <p>
+          Solar components and solutions
+          for homes and businesses.
+        </p>
 
-<div class="card">
+      </div>
 
-<div class="card-image"
-style="background-image:url('https://images.unsplash.com/photo-1566093097221-ac2335b09e70?auto=format&fit=crop&w=800&q=80')">
-</div>
+    </div>
 
-<div class="card-body">
 
-<h3>Solar Products</h3>
+    <div class="card">
 
-<p>
-Solar lights, pumps, smart products
-and other clean-energy solutions.
-</p>
+      <img src="project-5.png"
+           alt="EV Charging Station">
 
-<a class="more" href="#contact">
-Know More →
-</a>
+      <div class="card-content">
 
-</div>
+        <h3>EV Charging Station</h3>
 
-</div>
+        <p>
+          Practical EV charging solutions
+          for homes and commercial sites.
+        </p>
 
+      </div>
 
-<div class="card">
+    </div>
 
-<div class="card-image"
-style="background-image:url('https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=800&q=80')">
-</div>
 
-<div class="card-body">
+    <div class="card">
 
-<h3>EV Charging Station</h3>
+      <img src="project-6.png"
+           alt="Solar CCTV">
 
-<p>
-Smart EV charging infrastructure
-for homes and businesses.
-</p>
+      <div class="card-content">
 
-<a class="more" href="#contact">
-Know More →
-</a>
+        <h3>Solar CCTV</h3>
 
-</div>
+        <p>
+          Solar-powered security solutions
+          for remote locations.
+        </p>
 
-</div>
+      </div>
 
+    </div>
 
-<div class="card">
-
-<div class="card-image"
-style="background-image:url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80')">
-</div>
-
-<div class="card-body">
-
-<h3>Solar CCTV</h3>
-
-<p>
-Solar-powered security solutions
-for homes and businesses.
-</p>
-
-<a class="more" href="#contact">
-Know More →
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- SUBSIDY -->
-
-<section class="section green-section" id="subsidy">
-
-<div class="container">
-
-<div class="two-column">
-
-
-<div class="subsidy">
-
-<small>PM SURYA GHAR YOJANA</small>
-
-<h2>
-Get up to ₹78,000 subsidy*
-</h2>
-
-<p>
-We assist with eligibility, documentation,
-application and installation support.
-</p>
-
-<div class="subsidy-table">
-
-<div>1 kW</div>
-<div>₹30,000*</div>
-
-<div>2 kW</div>
-<div>₹60,000*</div>
-
-<div>3 kW & Above</div>
-<div>₹78,000*</div>
-
-<div>Housing Society</div>
-<div>₹18,000/kW*</div>
-
-</div>
-
-</div>
-
-
-<!-- CALCULATOR -->
-
-<div class="calculator" id="calculator">
-
-<h2>
-Solar Savings Calculator
-</h2>
-
-<p>
-Estimate your monthly solar savings.
-</p>
-
-<input
-id="bill"
-type="number"
-placeholder="Monthly electricity bill ₹"
->
-
-<input
-id="units"
-type="number"
-placeholder="Monthly units"
->
-
-<button
-class="calculate"
-onclick="calculateSavings()">
-
-Calculate Savings
-
-</button>
-
-<div
-class="result"
-id="result">
-</div>
-
-</div>
-
-</div>
+  </div>
 
 </div>
 
@@ -974,59 +700,91 @@ id="result">
 
 <!-- PROJECTS -->
 
-<section class="section" id="projects">
+<section id="projects" class="green-section">
 
 <div class="container">
 
-<div class="heading">
+  <div class="eyebrow">
+    Our Work
+  </div>
 
-<small>OUR PROJECTS</small>
+  <h2>
+    Installations That Build Trust
+  </h2>
 
-<h2>
-Installations That Build Trust
-</h2>
-
-<p>
-Your actual JWR RenewTech project photos
-can be added here.
-</p>
-
-</div>
+  <p class="section-text">
+    Real JWR Solar installation photographs
+    from rooftop projects.
+  </p>
 
 
-<div class="projects">
+  <div class="gallery">
 
+    <img src="project-1.png" alt="JWR Solar Project 1">
+    <img src="project-2.png" alt="JWR Solar Project 2">
+    <img src="project-3.png" alt="JWR Solar Project 3">
+    <img src="project-4.png" alt="JWR Solar Project 4">
+    <img src="project-5.png" alt="JWR Solar Project 5">
+    <img src="project-6.png" alt="JWR Solar Project 6">
+    <img src="project-7.png" alt="JWR Solar Project 7">
+    <img src="project-8.png" alt="JWR Solar Project 8">
+    <img src="project-9.png" alt="JWR Solar Project 9">
 
-<div class="project"
-style="background-image:url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1200&q=80')">
-
-<div>
-<h3>Residential Solar</h3>
-<small>Rooftop Installation</small>
-</div>
-
-</div>
-
-
-<div class="project"
-style="background-image:url('https://images.unsplash.com/photo-1548337138-e87d889cc369?auto=format&fit=crop&w=900&q=80')">
-
-<div>
-<h3>Commercial Solar</h3>
-</div>
+  </div>
 
 </div>
 
+</section>
 
-<div class="project"
-style="background-image:url('https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=900&q=80')">
 
-<div>
-<h3>Industrial Solar</h3>
-</div>
+<!-- CALCULATOR -->
 
-</div>
+<section id="calculator">
 
+<div class="container">
+
+<div class="calculator">
+
+  <div class="eyebrow" style="color:#7de1b0">
+    Solar Savings Calculator
+  </div>
+
+  <h2>
+    See How Much You Could Save
+  </h2>
+
+  <p>
+    Enter your average monthly electricity bill
+    for an indicative estimate.
+  </p>
+
+
+  <div class="form">
+
+    <input
+      id="bill"
+      type="number"
+      placeholder="Monthly electricity bill ₹">
+
+    <select id="type">
+
+      <option>Residential</option>
+      <option>Commercial</option>
+
+    </select>
+
+    <button
+      class="btn"
+      onclick="calculateSavings()">
+
+      Calculate Savings
+
+    </button>
+
+  </div>
+
+
+  <div id="result" class="result"></div>
 
 </div>
 
@@ -1037,66 +795,64 @@ style="background-image:url('https://images.unsplash.com/photo-1592833159155-c62
 
 <!-- CONTACT -->
 
-<section class="section contact" id="contact">
+<section id="contact">
 
-<div class="container">
+<div class="container contact-box">
 
-<div class="heading">
+  <div class="eyebrow">
+    Get Started
+  </div>
 
-<small style="color:#ffc13a">
-GET STARTED
-</small>
+  <h2>
+    Book Your Free Site Survey
+  </h2>
 
-<h2>
-Book Your FREE Site Survey
-</h2>
-
-<p>
-Tell us your requirement and our team will contact you.
-</p>
-
-</div>
+  <p class="section-text">
+    Share your details for system sizing,
+    quotation, net metering and subsidy guidance.
+  </p>
 
 
-<form
-class="form"
-onsubmit="sendWhatsApp(event)">
+  <form
+    class="form"
+    onsubmit="submitForm(event)">
 
-<input
-id="name"
-required
-placeholder="Full Name"
->
+    <input
+      required
+      type="text"
+      placeholder="Your Name">
 
-<input
-id="phone"
-required
-placeholder="Mobile Number"
->
+    <input
+      required
+      type="tel"
+      placeholder="Mobile Number">
 
-<select id="requirement">
+    <select>
 
-<option>Residential Solar</option>
-<option>Commercial Solar</option>
-<option>Industrial Solar</option>
-<option>EV Charging</option>
-<option>Solar Product</option>
+      <option>Residential Solar</option>
+      <option>Commercial Solar</option>
+      <option>Industrial Solar</option>
+      <option>EV Charging</option>
 
-</select>
+    </select>
 
-<textarea
-id="message"
-placeholder="Your requirement">
-</textarea>
+    <input
+      type="text"
+      placeholder="City / Area">
 
-<button
-class="submit">
+    <textarea
+      placeholder="Approx. monthly electricity bill / requirement">
+    </textarea>
 
-Submit & Get Free Consultation →
+    <button
+      type="submit"
+      class="btn">
 
-</button>
+      Request Free Site Survey →
 
-</form>
+    </button>
+
+  </form>
 
 </div>
 
@@ -1105,112 +861,99 @@ Submit & Get Free Consultation →
 
 <!-- FOOTER -->
 
-<footer class="footer">
+<footer>
 
-<img
-src="jwr-renewtech-logo.png"
-alt="JWR RenewTech">
+<div class="container footer-grid">
 
-<p>
-Solar • EV • Smart Energy
-</p>
+  <div>
 
-<small>
-© 2026 JWR RenewTech. All Rights Reserved.
-</small>
+    <h3>JWR RenewTech</h3>
+
+    <p>
+      Solar • EV • Smart Energy
+    </p>
+
+    <p>
+      Clean energy solutions for homes
+      and businesses.
+    </p>
+
+  </div>
+
+
+  <div>
+
+    <h3>Quick Links</h3>
+
+    <p><a href="#solutions">Solutions</a></p>
+    <p><a href="#projects">Projects</a></p>
+    <p><a href="#calculator">Calculator</a></p>
+
+  </div>
+
+
+  <div>
+
+    <h3>Contact</h3>
+
+    <p>
+      Get a free site survey
+      and quotation.
+    </p>
+
+    <p>
+      <a href="#contact">
+        Request a Quote →
+      </a>
+    </p>
+
+  </div>
+
+</div>
+
+
+<div class="container copyright">
+
+  © 2026 JWR RenewTech.
+  All Rights Reserved.
+
+</div>
 
 </footer>
-
-
-<!-- WHATSAPP -->
-
-<a
-class="whatsapp"
-href="https://wa.me/919960012345">
-
-☏
-
-</a>
 
 
 <script>
 
 function calculateSavings(){
 
-let bill =
-Number(document.getElementById("bill").value);
+  let bill =
+    Number(document.getElementById("bill").value);
 
-if(!bill){
+  if(!bill){
 
-document.getElementById("result").innerHTML =
-"Please enter your monthly bill.";
+    document.getElementById("result").innerHTML =
+      "Please enter your monthly electricity bill.";
 
-return;
+    return;
+  }
 
-}
+  let annualSavings =
+    Math.round(bill * 0.85 * 12);
 
-let saving =
-Math.round(bill * 0.85);
-
-document.getElementById("result").innerHTML =
-"Estimated monthly saving: ₹"
-+
-saving.toLocaleString("en-IN")
-+
-"*";
+  document.getElementById("result").innerHTML =
+    "Indicative annual savings: ₹" +
+    annualSavings.toLocaleString("en-IN");
 
 }
 
 
-function sendWhatsApp(event){
+function submitForm(event){
 
-event.preventDefault();
+  event.preventDefault();
 
-let name =
-document.getElementById("name").value;
-
-let phone =
-document.getElementById("phone").value;
-
-let requirement =
-document.getElementById("requirement").value;
-
-let message =
-document.getElementById("message").value;
-
-
-let text =
-"Hello JWR RenewTech,%0A"
-+
-"Name: "
-+
-name
-+
-"%0A"
-+
-"Mobile: "
-+
-phone
-+
-"%0A"
-+
-"Requirement: "
-+
-requirement
-+
-"%0A"
-+
-"Message: "
-+
-message;
-
-
-window.open(
-"https://wa.me/919960012345?text="
-+
-text,
-"_blank"
-);
+  alert(
+    "Thank you! JWR RenewTech will contact you shortly."
+  );
 
 }
 
